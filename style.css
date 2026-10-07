@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('assets/fonts/ArchivoBlack-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('assets/fonts/Oxygen-Regular.ttf');
+}
+
+:root {
+    /* COLORS */
+    --black: #121212;
+    --white: #f5f5f5;
+    --grey: #e0e0e0;
+    --red: #b50c00;
+
+    /* FONT FAMILY */
+    --Archivo: 'Archivo Black', sans-serif;
+    --Oxygen: 'Oxygen', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--Oxygen);
+}
+
+.wrapper {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    max-width: 400px;
+
+    padding: 10px 20px 20px 20px;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: var(--Archivo);
+}
+
+.divider {
+    border: 1px solid var(--grey);
+    margin-bottom: 10px;
+}
+
+.toggle-section {
+    margin-bottom: 20px;
+}
+
+.add-page-button {
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    height: 30px;
+    border: 2px solid var(--black);
+    margin-bottom: 20px;
+    font-family: var(--Oxygen);
+    font-size: 15px;
+}
+
+.add-page-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.site-list-title-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.site-list-title {
+
+}
+
+.site-list {
+    
+}
+
+.site-list li {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+    gap: 7px;
+}
+
+.favicon {
+    width: 16px;
+    height: 16px;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    opacity: 0.5;
+    font-size: 15px;
+    margin-left: auto;
+}
+
+.delete-button:hover {
+    color: var(--red);
+    opacity: 1;
+}

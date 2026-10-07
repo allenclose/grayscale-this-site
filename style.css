@@ -1,11 +1,6 @@
 @font-face {
-    font-family: 'Archivo Black';
-    src: url('assets/fonts/ArchivoBlack-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Oxygen';
-    src: url('assets/fonts/Oxygen-Regular.ttf');
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_opsz,wght.ttf');
 }
 
 :root {
@@ -16,8 +11,7 @@
     --red: #b50c00;
 
     /* FONT FAMILY */
-    --Archivo: 'Archivo Black', sans-serif;
-    --Oxygen: 'Oxygen', sans-serif;
+    --Inter: 'Inter', san-serif;
 }
 
 * {
@@ -27,7 +21,7 @@
 }
 
 body {
-    font-family: var(--Oxygen);
+    font-family: var(--Inter);
 }
 
 .wrapper {
@@ -42,8 +36,9 @@ body {
 
 .title {
     margin-bottom: 10px;
-    font-size: 25px;
-    font-family: var(--Archivo);
+    font-size: 30px;
+    font-family: var(--Inter);
+    font-weight: 900;
 }
 
 .divider {
@@ -62,7 +57,7 @@ body {
     height: 30px;
     border: 2px solid var(--black);
     margin-bottom: 20px;
-    font-family: var(--Oxygen);
+    font-family: var(--Inter);
     font-size: 15px;
 }
 
